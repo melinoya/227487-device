@@ -12,17 +12,39 @@
     	<a class="logo">DEVICE</a>
     	
 	    	<div class="client">
-	    		<p>Поиск по сайту</p> <!-- Форма поиска -->
-	    		<p><a href="#">Войти</a></p>
-	    		<p><a href="#">Сравнить</a></p>
-	    		<p><a href="#">Корзина</a></p>
+
+	    		<form name="search" method="post" action="#">	    			
+	    			<input type="text" name="search_field" id="search_field">	
+	    			<label for="search_field">Поиск по сайту</label>    			
+	    			<button type="submit" name="search_submit">Найти</button>
+	    		</form>
+
+	    		
+
+	    		<ul class="log">
+	    			<li><a class="log_in" href="#">Войти</a></li>
+	    			<li><a class="log_out hidden" href="#">Выйти</a></li>
+	    		</ul>
+
+	    		<a href="#" class="compare">Сравнить</a></p>
+	    		<a href="#" class="cart">Корзина</a></p>
 	    	</div>
 
 	    	<ul class="nav">
-	    		<li>Каталог товаров</li>
-	    		<li>Доставка</li>
-	    		<li>Гарантия</li>
-	    		<li>Контакты</li>
+	    		<li>
+	    			<a href="#" >Каталог товаров</a>
+	    			<ul class="items_catalog">
+	    				<li><a href="#">Виртуальная реальность</a></li>
+	    				<li><a href="#">Моноподы для селфи</a></li>
+	    				<li><a href="#">Экшн-камеры</a></li>
+	    				<li><a href="#">Фитнес-браслеты</a></li>
+	    				<li><a href="#">Умные часы</a></li>
+	    				<li><a href="#">Квадракоплеты</a></li>
+	    			</ul>
+	    		</li>
+	    		<li><a href="#">Доставка</a></li>
+	    		<li><a href="#">Гарантия</a></li>
+	    		<li><a href="#">Контакты</a></li>
 	    	</ul>
 
     	
@@ -36,7 +58,7 @@
 
 		<footer class="main_footer">
 			<section class="info">
-				<p class="logo"><a href="#">Device</a></p>
+				<a class="logo">Device</a>
 				<p class="address">г. Москва, ул. Строителей, 15</p>
 			</section>
 
@@ -58,7 +80,7 @@
 				</div>				
 			</section>
 
-			<section class="autorisation">
+			<section class="authorisation">
 				<div class="client">
 					<p><a href="#">Войти</a></p>
 					<p><a href="#">Сравнить</a></p>
