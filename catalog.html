@@ -91,21 +91,21 @@
 
 						<div class="color">
 							<b>Цвет</b>
-							<ul>
+							<ul class="color_list">
 								<li>
-									<label><input type="checkbox" name="color" value="black">Черный</label>
+									<label><input class="visually_hidden" type="checkbox" name="color" value="black" checked><span class="checkbox_indicator"></span>Черный</label>
 								</li>
 								<li>
-									<label><input type="checkbox" name="color" value="white">Белый</label>
+									<label><input class="visually_hidden" type="checkbox" name="color" value="white"><span class="checkbox_indicator"></span>Белый</label>
 								</li>
 								<li>
-									<label><input type="checkbox" name="color" value="blue">Синий</label>
+									<label><input class="visually_hidden" type="checkbox" name="color" value="blue" checked><span class="checkbox_indicator"></span>Синий</label>
 								</li>
 								<li>
-									<label><input type="checkbox" name="color" value="red">Красный</label>
+									<label><input class="visually_hidden" type="checkbox" name="color" value="red" checked><span class="checkbox_indicator"></span>Красный</label>
 								</li>
 								<li>
-									<label><input type="checkbox" name="color" value="pink">Розовый</label>
+									<label class="block"><input class="visually_hidden" type="checkbox" name="color" value="pink" disabled><span class="checkbox_indicator"></span>Розовый</label>
 								</li>
 							</ul>						
 						</div>
@@ -114,10 +114,10 @@
 							<b>Bluetooth</b>
 							<ul>
 								<li>
-									<label><input type="radio" name="bluetooth" value="y">Есть</label>
+									<label><input class="visually_hidden" type="radio" name="bluetooth" value="y" checked><span class="radio_indicator"></span>Есть</label>
 								</li>
 								<li>
-									<label><input type="radio" name="bluetooth" value="n">Нет</label>
+									<label class="block"><input class="visually_hidden" type="radio" name="bluetooth" value="n" disabled><span class="radio_indicator"></span>Нет</label>
 								</li>
 							</ul>
 						</div>
@@ -207,13 +207,13 @@
 					</ul>
 
 					<nav class="paginator">
-						<a href="#">Назад</a>
-						<ul>
-							<li><a href="#">1</a></li>
+						<a href="#" class="back">Назад</a>
+						<ul class="pages">
+							<li><a class="current" href="#">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 						</ul>
-						<a href="#">Вперед</a>
+						<a href="#" class="next">Вперед</a>
 					</nav>
 				</section>
 			</div>
