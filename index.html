@@ -67,7 +67,7 @@
 
     	<section class="slider">
 
-    		<div class="first none">
+    		<div class="first">
 	    		<div class="top">
 	    			<span class="number">01</span>
 	    		</div>
@@ -83,9 +83,9 @@
 							<div class="buttons">
 								<a href="#" class="button">Подробнее</a>
 								<div class="switch">
-									<a href="#">1 слайд</a>
-									<a href="#">2 слайд</a>
-									<a href="#">3 слайд</a>
+									<a href="#" class="current_slide"><span class="visually_hidden">1 слайд</span></a>
+									<a href="#"><span class="visually_hidden">2 слайд</span></a>
+									<a href="#"><span class="visually_hidden">3 слайд</span></a>
 								</div>
 	    				</div>
 							
@@ -134,7 +134,7 @@
 
     		</div>  <!-- second -->
 
-    		<div class="third ">
+    		<div class="third none">
 	    		<div class="top">
 	    			<span class="number">03</span>
 	    		</div>
@@ -236,10 +236,10 @@
     	</section>
 
     	<section class="companies">
-    		<a href="#"><img src="img/logo_1.jpg" alt="DJI"><span class="visually_hidden">DJI</span></a>
-    		<a href="#"><img src="img/logo_2.jpg" alt="SP Gadgets"><span class="visually_hidden">SP Gadgets</span></a>
-    		<a href="#"><img src="img/logo_3.jpg" alt="GoPro"><span class="visually_hidden">GoPro</span></a>
-    		<a href="#"><img src="img/logo_4.jpg" alt="Vive"><span class="visually_hidden">Vive</span></a>
+    		<a href="#"><img src="img/logo_1.jpg" alt="DJI" width="260" height="100"><span class="visually_hidden">DJI</span></a>
+    		<a href="#"><img src="img/logo_2.jpg" alt="SP Gadgets" width="260" height="100"><span class="visually_hidden">SP Gadgets</span></a>
+    		<a href="#"><img src="img/logo_3.jpg" alt="GoPro" width="260" height="100"><span class="visually_hidden">GoPro</span></a>
+    		<a href="#"><img src="img/logo_4.jpg" alt="Vive" width="260" height="100"><span class="visually_hidden">Vive</span></a>
     	</section>
 
     	<section class="more_info">
@@ -272,30 +272,8 @@
 
 
 		<footer class="main_footer">
-			<section class="info">
+			<section class="top">
 				<a class="logo">Device</a>
-				<p class="address">г. Москва, ул. Строителей, 15</p>
-			</section>
-
-			<section class="user_nav">
-				<nav class="footer_nav">
-					<ul>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-
-				<div class="social">
-					<ul>
-						<li><a href="#" class="fb"><span class="visually_hidden">Facebook</span></a></li>
-						<li><a href="#" class="inst"><span class="visually_hidden">Instagram</span></a></li>
-						<li><a href="#" class="tw"><span class="visually_hidden">Twitter</span></a></li>
-					</ul>
-				</div>				
-			</section>
-
-			<section class="authorisation">
 				<div class="client">
 
 					<ul class="log">
@@ -307,17 +285,41 @@
 
 
 					<a class="cart" href="#">Корзина</a>
-				</div>
+				</div>				
+			</section>
 
+			<section class="middle">
+				<p class="address">г. Москва, ул. Строителей, 15</p>
+				<nav class="footer_nav">
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
 				<p class="tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 
-				<p><a href="#" class="copyright"><span class="visually_hidden">HTML-Academy</span></a></p>
+								
+			</section>
+
+			<section class="bottom">
+				
+			<div class="social">
+					<ul>
+						<li><a href="#" class="fb"><span class="visually_hidden">Facebook</span></a></li>
+						<li><a href="#" class="inst"><span class="visually_hidden">Instagram</span></a></li>
+						<li><a href="#" class="tw"><span class="visually_hidden">Twitter</span></a></li>
+					</ul>
+				</div>
+				
+
+				<a href="#" class="copyright"><span class="visually_hidden">HTML-Academy</span></a>
 
 			</section>
 			
 		</footer>
 
-		<div class="none modal_popup ">
+		<div class="none modal_popup write_popup">
 			<form name="write_us" method="post" action="#">
 				<button class="popup_close" type="button"><span class="visually_hidden">Закрыть</span></button>
 				<div class="before_text">
@@ -328,6 +330,11 @@
 					
 				<button type="submit" name="write_us_submit" class="button">Отправить</button>
 			</form>
+		</div>
+
+		<div class="none modal_popup map_popup">
+			<button class="popup_close" type="button"><span class="visually_hidden">Закрыть</span></button>
+			<img src="img/map_big.jpg" alt="Схема проезда" width="960" height="559">
 		</div>
 
 

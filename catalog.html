@@ -22,8 +22,8 @@
 	    		
 					<div class="user_control">
 		    		<ul class="log">
-		    			<li><a class="log_in" href="#">Войти</a></li>
-		    			<li><a class="log_out hidden" href="#">Выйти</a></li>
+		    			<li><a class="log_in" href="#">Валентин Петухов</a></li>
+		    			<li><a class="log_out " href="#">Выйти</a></li>
 		    		</ul>
 						
 						<ul class="user_items">
@@ -85,8 +85,17 @@
 
 						<div class="price">
 							<b>Стоимость</b>
-							<div class="filter_button"></div>
-							<div class="filter_button"></div>
+							<div class="scale">
+              	<div class="bar"></div>
+            	</div>
+							<div class="price_range price_range_min">
+								<div class="toggle toggle_min"></div>
+								<div class="range_min range">от 0</div>
+							</div>
+							<div class="price_range price_range_max">
+								<div class="toggle toggle_max"></div>
+								<div class="range_max range">до 5000</div>
+							</div>
 						</div>
 
 						<div class="color">
@@ -172,7 +181,7 @@
 							</div>
 							<div class="description">
 								<a href="#">Профессиональная селфи-палка</a>
-								<span>1500 руб.</span>
+								<span>1 500 руб.</span>
 							</div>
 						</li>
 
@@ -186,21 +195,23 @@
 							</div>
 							<div class="description">
 								<a href="#">Непотопляемая селфи-палка</a>
-								<span>2500 руб.</span>
+								<span>2 500 руб.</span>
 							</div>								
 						</li>
 
 						<li class="item">
 							<div class="item_img">
+								<div class="new_item">NEW</div>
 								<div class="hover">
 									<a href="#" class="button">В корзину</a>
 									<a href="#" class="add_to_compare">Добавить к сравнению</a>
 								</div>
 								<img src="img/item_4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+								
 							</div>
 							<div class="description">
 								<a href="#">Селфи-палка «Следуй за мной»</a>
-								<span>4900 руб.</span>	
+								<span>4 900 руб.</span>	
 							</div>						
 						</li>
 
@@ -222,12 +233,24 @@
 
 
     <footer class="main_footer inner_footer">
-			<section class="info">
+			<section class="top">
 				<a class="logo">Device</a>
-				<p class="address">г. Москва, ул. Строителей, 15</p>
+				<div class="client">
+
+					<ul class="log">
+	    			<li><a class="log_in " href="#">Валентин Петухов</a></li>    			
+	    			<li><a class="log_out" href="#">Выйти</a></li>
+	    		</ul>
+
+					<a class="compare" href="#">Сравнить</a>
+
+
+					<a class="cart" href="#">Корзина</a>
+				</div>				
 			</section>
 
-			<section class="user_nav">
+			<section class="middle">
+				<p class="address">г. Москва, ул. Строителей, 15</p>
 				<nav class="footer_nav">
 					<ul>
 						<li><a href="#">Доставка</a></li>
@@ -235,33 +258,23 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
+				<p class="tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 
-				<div class="social">
+								
+			</section>
+
+			<section class="bottom">
+				
+			<div class="social">
 					<ul>
 						<li><a href="#" class="fb"><span class="visually_hidden">Facebook</span></a></li>
 						<li><a href="#" class="inst"><span class="visually_hidden">Instagram</span></a></li>
 						<li><a href="#" class="tw"><span class="visually_hidden">Twitter</span></a></li>
 					</ul>
-				</div>				
-			</section>
-
-			<section class="authorisation">
-				<div class="client">
-
-					<ul class="log">
-	    			<li><a class="log_in " href="#">Войти</a></li>    			
-	    			<li><a class="log_out none" href="#">Выйти</a></li>
-	    		</ul>
-
-					<a class="compare" href="#">Сравнить</a>
-
-
-					<a class="cart" href="#">Корзина</a>
 				</div>
+				
 
-				<p class="tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-
-				<p><a href="#" class="copyright"><span class="visually_hidden">HTML-Academy</span></a></p>
+				<a href="#" class="copyright"><span class="visually_hidden">HTML-Academy</span></a>
 
 			</section>
 			
