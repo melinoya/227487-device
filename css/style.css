@@ -343,7 +343,7 @@ button.button:active {
 	background: url("../img/user_header.svg") no-repeat;
 }
 .user_control a {
-	font-family: OpenSans;
+	font-family: "OpenSans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	font-style: normal;
@@ -475,14 +475,14 @@ button.button:active {
 .items_catalog  {
 	position: absolute;	
 	left: -59px;
-	top: 17px;
+	top: 20px;
 	z-index: 3;
 
 	display: none;
 	width: 1160px;
 	padding-left: 60px;
 	padding-top: 13px;
-	padding-bottom: 38px;
+	padding-bottom: 35px;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 
@@ -925,6 +925,10 @@ button.button:active {
 	opacity: 0.3;
 }
 
+.map_popup iframe {
+	border: none;
+}
+
 
 
 
@@ -939,6 +943,7 @@ main {
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 	padding: 0 142.5px;
+	
 }
 
 .slider .top {
@@ -1013,7 +1018,7 @@ main {
 	position: relative;
 	z-index: 2;
 
-	width: 100%;
+	width: 510px;
 	margin-bottom: 5px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -1124,9 +1129,29 @@ main {
 	color: #000000;
 }
 
+.slider .first img {
+	margin-left: 90px;
+	margin-bottom: 105px;
+}
+
+.slider .second img {
+	margin-left: 115px;
+	margin-top: 10px;
+	margin-bottom: 95px;
+}
+
+.slider .third img {
+	margin-left: 30px;
+	margin-top: 65px;
+	margin-bottom: 193px;
+}
+
+.slider .third .table p {
+	margin-right: 47px;
+}
+
 .mini_menu {
 	padding: 0 144px;
-	margin-top: 105px;
 	margin-bottom: 65px;
 }
 
@@ -1418,6 +1443,8 @@ main {
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 
 	margin-bottom: 93px;
 	padding: 0 145px;
@@ -2332,6 +2359,42 @@ ul.inner_catalog {
  width: 40px;
 }
 
+@-webkit-keyframes vanish {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes vanish {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animation {
+	-webkit-animation: vanish;
+					animation: vanish;
+	-webkit-animation-duration: 0.8s;
+					animation-duration: 0.8s;
+}
+
+@-webkit-keyframes error {
+0%, 50%, 100% { background-color: white; }
+25%, 75% { background-color: red; }	
+
+}
+
+@keyframes error {
+0%, 50%, 100% { background-color: white; }
+25%, 75% { background-color: red; }	
+
+}
+
+.error {	
+	-webkit-animation: error;	
+					animation: error;
+	-webkit-animation-duration: 0.3s;
+					animation-duration: 0.3s;
+}
+
 .modal_popup {
 	position: fixed;
 	z-index: 100000000;
@@ -2342,14 +2405,16 @@ ul.inner_catalog {
 					transform: translate(-50%, -50%);
 
 	display: block;
-	
-	
 
+	
 }
+
+
 
 .write_popup {
 	padding: 100px;
-	padding-bottom: 80px;
+	padding-top: 95px;
+	padding-bottom: 77px;
 
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
@@ -2392,8 +2457,8 @@ ul.inner_catalog {
 .modal_popup .message textarea {
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
-	margin-top: 5px;
-	padding: 20px;
+	margin-top: 7px;
+	padding: 15px 20px;
 	width: 100%;
 	height: 100%;
 
@@ -2407,13 +2472,17 @@ ul.inner_catalog {
 	color: rgba(70, 70, 70, 0.4);
 }
 
+.modal_popup .message textarea {
+	padding-top: 15px;
+}
+
 .write_popup .name {
 	margin-right: 40px;
 }
 
 .write_popup .message {
 	display: block;
-	margin-top: 50px;
+	margin-top: 60px;
 	width: 760px;
 	min-height: 155px;
 
@@ -2449,8 +2518,12 @@ ul.inner_catalog {
 
 .write_popup .button {
 	width: 200px;
-	margin-top: 30px;
+	margin-top: 40px;
 	padding: 0;
+}
+
+.write_popup .button::after {
+	top: 40%;
 }
 
 .popup_close {
@@ -2513,3 +2586,7 @@ ul.inner_catalog {
 .none {
 	display: none;
 }
+
+
+
+
